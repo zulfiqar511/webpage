@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *{
+padding: 0;
+margin: 0;
+}
+.wrapper {
+background: url(moon.jpg) no-repeat;
+background-size: cover;
+height: 100vh;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba (0,0,0,0.4);
+}
+.logo{
+    width: 140px ;
+    height: auto ;
+    padding: 20px 100px
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px; 
+}
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: 'Roboto' , sans-serif;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: red;
+    border-radius: 2px;
+}
+.wrapper .center {
+    position: absolute;
+    top:50%;
+    left:55;
+    transform: translate (-50%,-50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+.center h1 { 
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center; 
+}
+.center h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+.center .buttons{
+    margin: 35px 290px; 
+}
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffb3b3;
+    background: red;
+    border: 1px solid #cc0000;
+    outline:none;
+    cursor: pointer; 
+    border-radius: 25px;
+transition: .5s;
+}
+.buttons .btn{
+    margin-left: 25px   
+}
+.buttons button:hover{
+    background: #cc0000;
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="logo.png">
+            <ul>
+                <li>
+                    <a class="Active" href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Feedback</a>
+                </li>
+            </ul>
+            <div class="center">
+                <h1>Welcome To Casecade</h1>
+                <h2>Create Something New </h2>
+                <div class="buttons">
+                    <button>Explore More</button>
+                    <button class="btn">Subscribe Us</button>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
